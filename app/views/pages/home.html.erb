@@ -1,4 +1,9 @@
 <div class="jumbotron">
 	<h1>Alex's First Rails Project</h1>
-	<p>Click here to <%= link_to "Sign up", "http://www.google.com", class: "btn btn-primary btn-lg" %>. </p>
+	<% if user_signed_in? %> 
+		#do something 
+	<% else %> 
+		<p>Click here to <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %><%= link_to "Sign In", new_user_session_path, class: "btn btn-primary btn-lg" %>. 
+		</p>
+	<% end %>
 </div>
