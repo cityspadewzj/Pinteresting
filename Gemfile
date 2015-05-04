@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3p392'
+ruby '1.9.3'
 
 gem 'rails', '4.1.8'
 
@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'devise', '~>3.1.0.rc2'
 
 group :development, :test do 
 	gem 'sqlite3'
