@@ -14,6 +14,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise', '~>3.1.0.rc2'
 gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '~> 2.0.41'
 
 group :development, :test do 
 	gem 'sqlite3'
