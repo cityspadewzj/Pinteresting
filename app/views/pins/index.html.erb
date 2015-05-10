@@ -14,7 +14,7 @@
     <% @pins.each do |pin| %>
       <tr>
         <% if pin.image.url == "https://c4.staticflickr.com/4/3425/13078131074_011f3f18bb_k.jpg" %>
-          <td><%= image_tag pin.image.url %></td>
+          <td><%= image_tag pin.image.url, width:"300", height:"300" %></td>
         <% else %>
           <td><%= image_tag pin.image.url(:medium) %></td>
         <% end %>
