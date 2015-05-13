@@ -16,6 +16,7 @@ gem 'devise', '~>3.1.0.rc2'
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem 'nokogiri', '1.5.9'
+gem 'masonry-rails'
 
 group :development, :test do 
 	gem 'sqlite3'
