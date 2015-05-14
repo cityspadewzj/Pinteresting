@@ -4,21 +4,23 @@
 
 <br>
 
-<div id="pins"> 
+<div id="pins" class="transitions-enabled"> 
   <% @pins.each do |pin| %>
-    <div class="box">
+    <div class="box panel panel-default">
       <% if pin.image.url == "https://c4.staticflickr.com/4/3425/13078131074_011f3f18bb_k.jpg" %>
         <%= image_tag pin.image.url, width:"300", height:"300" %>
       <% else %>
         <%= image_tag pin.image.url(:medium) %>
       <% end %>
-      <%= pin.description %>
-      <%= pin.user.email if pin.user %>
-      <%= link_to 'Show', pin %>
-      <% if pin.user == current_user %>
-        <%= link_to 'Edit', edit_pin_path(pin) %>
-        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
+      <div class="panel-body">
+        <%= pin.description %>
+        <%= pin.user.email if pin.user %>
+        <%= link_to 'Show', pin %>
+        <% if pin.user == current_user %>
+          <%= link_to 'Edit', edit_pin_path(pin) %>
+          <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 </div>
