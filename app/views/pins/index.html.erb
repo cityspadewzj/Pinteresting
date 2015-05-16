@@ -1,3 +1,5 @@
+<%= render 'pages/home' if !user_signed_in? %>
+
 <% if user_signed_in? %>
   <%= link_to raw('<span class="glyphicons glyphicons-right-arrow"></span>' 'New Pin'), new_pin_path %>
 <% end %>
