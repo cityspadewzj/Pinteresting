@@ -18,6 +18,7 @@ gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem 'nokogiri', '1.5.9'
 gem 'masonry-rails'
+gem 'will_paginate', '~> 3.0.6'
 
 group :development, :test do 
 	gem 'sqlite3'
